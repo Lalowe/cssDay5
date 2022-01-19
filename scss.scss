@@ -1,0 +1,39 @@
+@import "variable/variables";
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: $color;
+}
+
+@mixin mixin($colorado, $font-size) {
+    text-decoration: none;
+    padding: 10px;
+    width: 45px;
+    height: 20px;
+    border: black 1px solid;
+    color: whitesmoke;
+    text-shadow: 1px 0px;
+    transition: 500ms;
+    background-color: $colorado;
+    font-size: $font-size;
+}
+
+.items {
+    @include mixin (rgb(182, 102, 5), 30px);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    background-color: aqua;
+    color: wheat;
+    &:hover {
+        background-color: yellowgreen;
+    }
+}
