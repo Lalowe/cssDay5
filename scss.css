@@ -28,9 +28,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: yellowgreen;
 }
 
 .button button {
@@ -40,5 +44,25 @@
 
 .button button:hover {
   background-color: yellowgreen;
+}
+
+.list {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
+  background-color: aquamarine;
+}
+
+.list li {
+  font-size: 8px;
+}
+
+.items a {
+  font-size: 8px;
 }
 /*# sourceMappingURL=scss.css.map */

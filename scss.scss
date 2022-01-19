@@ -27,7 +27,12 @@
 
 .button {
     display: flex;
+    margin: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
     justify-content: center;
+    background-color: yellowgreen;
+    // tu pekne vidis ze co robi pozadi v divisione a pozadi v  buttone ..super//
 }
 
 .button button {
@@ -36,4 +41,22 @@
     &:hover {
         background-color: yellowgreen;
     }
+}
+
+@import "variable/variables";
+.list {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: $color;
+}
+
+.list li {
+    font-size: $size;
+}
+
+.items a {
+    font-size: $size;
 }
