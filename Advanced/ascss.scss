@@ -1,0 +1,91 @@
+            body {
+                background-color: wheat;
+            }
+            
+            .container {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                grid-template-rows: 33% 33% 33%;
+                margin: auto;
+                grid-gap: 10px;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .container img {
+                border: 1px solid black;
+                width: 95%;
+                height: 85%;
+                object-fit: cover;
+                opacity: 0.5;
+                &:hover {
+                    opacity: 1;
+                    width: 100%;
+                    height: 90%;
+                }
+            }
+            
+            .container>div {
+                text-align: center;
+            }
+            
+            .container>div:hover .button {
+                opacity: 1;
+            }
+            
+            .container .button {
+                align-items: center;
+                background-color: #555;
+                color: white;
+                font-size: 10px;
+                padding: 6px 6px;
+                // border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+                top: -6vh;
+                opacity: 0;
+            }
+            
+            .container .button a {
+                text-decoration: none;
+                color: wheat;
+            }
+            
+            @media screen and (max-width: 1000px) {
+                body {
+                    background-color: yellowgreen;
+                }
+                .container {
+                    grid-template-columns: 2fr 2fr;
+                }
+            }
+            
+            @media screen and (max-width: 800px) {
+                body {
+                    background-color: rgb(238, 215, 12);
+                }
+                .container {
+                    grid-template-columns: 2fr;
+                    grid-template-rows: 2fr;
+                }
+            }
+            
+            @mixin mixin ($colorado, $fontsize) {
+                font-size: $fontsize;
+                color: $colorado;
+            }
+            
+            h1 {
+                @include mixin (teal, 30px);
+                text-align: center;
+                text-decoration-line: underline;
+            }
+            
+            h3 {
+                @include mixin (brown, 15px);
+                text-shadow: 1px 1px;
+                text-decoration-line: underline;
+                font-size: 25px;
+            }
